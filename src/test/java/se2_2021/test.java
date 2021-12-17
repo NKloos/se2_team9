@@ -8,7 +8,7 @@ class test {
 
 	@Test
 	void test() {
-		fail("Not yet implemented");
+		fail("erster test, NK");
 	}
 
 }
