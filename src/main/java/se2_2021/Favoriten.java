@@ -4,10 +4,9 @@ import java.util.ArrayList;
 
 public class Favoriten {
 
-	private ArrayList<String> favoriten;
+	private ArrayList<String> favoriten = new ArrayList<String>();
 	
-	
-	public void favouriteHinzufügen(String name, String adresse) {
+	public void favoriteHinzufügen(String name, String adresse) {
 		String n = name + " : " + adresse;
 		favoriten.add(n);
 	}
@@ -16,7 +15,7 @@ public class Favoriten {
 	public void favoriteEntfernen(String name, String adresse) {
 		String n = name + " : " + adresse;
 		for (String str : favoriten) {
-			if (n == str) {
+			if (n.equals(str)) {
 				favoriten.remove(str);
 			}
 		}
@@ -29,7 +28,7 @@ public class Favoriten {
 	
 	public void favoritenAnzeigen() {
 		for (String str : favoriten) {
-			System.out.print(str);
+			System.out.println(str);
 		}
 	}
 	
