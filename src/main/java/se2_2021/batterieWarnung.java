@@ -1,7 +1,5 @@
 package se2_2021;
 
-import java.util.ArrayList;
-
 public class batterieWarnung {
 
 	public static void main(String[] args) {
@@ -12,7 +10,7 @@ public class batterieWarnung {
 		int bl = 20;
 		boolean status;
 		if (batterieLadung <= bl) {
-			System.out.print("Batterie - Reichweite kritisch! Bitte die nächste Ladestation aufsuchen!");
+			System.out.print("Batterie - Reichweite kritisch! Bitte die nÃ¤chste Ladestation aufsuchen!");
 			status = false;
 		}
 
