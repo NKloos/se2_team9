@@ -12,7 +12,7 @@ public class zielAuswaehlen {
 
 	public void printZiele() {
 		for (int i = 0; i < ziele.size(); i++)
-			System.out.println(i + " " + ziele.get(i).getName() + ": " + ziele.get(i).getStraße() + " "
+			System.out.println((i + 1) + " " + ziele.get(i).getName() + ": " + ziele.get(i).getStraße() + " "
 					+ ziele.get(i).getHausnummer() + ", " + ziele.get(i).getPostleitzahl() + " "
 					+ ziele.get(i).getOrt());
 	}
@@ -23,15 +23,15 @@ public class zielAuswaehlen {
 
 	public void printZiel(int index) {
 		int i = index - 1;
-		System.out.println(i + " " + ziele.get(i).getName() + ": " + ziele.get(i).getStraße() + " "
-				+ ziele.get(i).getHausnummer() + ", " + ziele.get(i).getPostleitzahl() + " " + ziele.get(i).getOrt());
+		System.out.println(ziele.get(i).getName() + ": " + ziele.get(i).getStraße() + " " + ziele.get(i).getHausnummer()
+				+ ", " + ziele.get(i).getPostleitzahl() + " " + ziele.get(i).getOrt());
 	}
 
 	public Ziel getZiel(int index) {
 		return ziele.get(index - 1);
 	}
 
-	private class Ziel {
+	public class Ziel {
 
 		private String name;
 		private String straße;
@@ -39,7 +39,7 @@ public class zielAuswaehlen {
 		private int postleitzahl;
 		private String ort;
 
-		private Ziel(String name, String straße, int hausnummer, int postleitzahl, String ort) {
+		public Ziel(String name, String straße, int hausnummer, int postleitzahl, String ort) {
 			this.name = name;
 			this.straße = straße;
 			this.hausnummer = hausnummer;
