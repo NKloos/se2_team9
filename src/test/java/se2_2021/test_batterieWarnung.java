@@ -9,8 +9,8 @@ public class test_batterieWarnung {
 	
 	@Test
 	void test_batterie1(){
-		batterWarner b = new batterWarner();
-		b.batterieAlert(75);
+		batterieWarnung b = new batterieWarnung();
+		b.batterieAlertt(75);
 		assertTrue(true,"Batterie - Reichweite unkritisch");
 	}
 
